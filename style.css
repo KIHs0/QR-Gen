@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
+  width: 35%;
+  border-radius: 3px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border: none;
+  outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+
+  align-items: center;
+}
+
+#sizes {
+  width: 21.5%;
+  height: 10%;
+}
+
+#qr-text {
+  width: 100%;
+  height: max-content;
+  margin: 1rem 0 1rem 0;
+  padding: 0.2rem;
+}
+#qr-text::placeholder {
+  color: grey;
+  font-weight: 600;
+  font-style: sans-serif;
+}
+
+.qr-container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-container {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.action-container img {
+  width: 30px;
+  height: 10px;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.share {
+  background-color: black;
+  background: none;
+  color: white;
+  border: 1px solid grey;
+  padding: 0.2em;
+  margin: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  border: 1px solid gray;
+  padding: 0.3rem;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+}
+
+.action-container a :hover {
+  color: blue;
+  transform: translateY(2px);
+}
+
+.share :hover {
+  color: blue;
+  transform: translateY(2px);
+}
+#qr-code img,
+#qr-code canvas {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+@media (max-width: 512px) {
+  body {
+    max-width: 100%;
+    padding: 10px;
+  }
+  #qr-code {
+    width: 95vw;
+    height: 95vw;
+  }
+  #qr-code img,
+  #qr-code canvas {
+    max-width: 95vw !important;
+    max-height: 95vw !important;
+  }
+  .share {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 350px) {
+  .action-container {
+    flex-direction: column;
+  }
+  .share {
+    margin-top: 0;
+  }
+}

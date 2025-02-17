@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR- Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="row">
+        <input type="color" class="light" value="#ffffff" />
+        <input type="color" class="darkss" />
+        <select id="sizes"></select>
+      </div>
+
+      <input type="text" placeholder="Enter QR Text" id="qr-text" />
+      <div class="qr-container" id="qr-code"></div>
+      <div class="action-container">
+        <a href="#" class="download" download="QRCode">
+          <span>download</span>
+          <img src="download.svg" />
+        </a>
+        <button class="share">
+          <span>share</span>
+          <img src="share(1).svg" />
+        </button>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
