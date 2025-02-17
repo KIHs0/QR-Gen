@@ -12,6 +12,11 @@ A sleek and easy-to-use QR code generator that converts any text or URL into a Q
 - **Frontend:** HTML, CSS, JavaScript  
 - **QR Generator Library:** `qrcode.js`, `qr-code-styling`  
 - **(Optional)** Backend: Node.js, Express.js  
+## 📷 Screenshots  
+### 🔹 QR Scanner Home  
+![Alt Text](image.png)
+
+
 
 ## 📦 How to Use
 
