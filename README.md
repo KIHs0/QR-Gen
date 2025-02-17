@@ -17,5 +17,5 @@ A sleek and easy-to-use QR code generator that converts any text or URL into a Q
 
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/your-username/qr-text-generator.git
+git clone https://github.com/KIHs0/qr-text-generator.git
 cd qr-text-generator
